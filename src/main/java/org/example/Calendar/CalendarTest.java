@@ -36,10 +36,7 @@ public class CalendarTest {
 
         driver.findElement(By.xpath("//abbr[text()='" + date + "']")).click();
 
-        List<WebElement> actualList =
-                driver.findElements(
-                        By.cssSelector(".react-date-picker__inputGroup__input")
-                );
+        List<WebElement> actualList = driver.findElements(By.cssSelector(".react-date-picker__inputGroup__input"));
 
         for (int i = 0; i < actualList.size(); i++) {
 

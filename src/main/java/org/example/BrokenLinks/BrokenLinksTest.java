@@ -21,8 +21,7 @@ public class BrokenLinksTest {
         driver.get("https://rahulshettyacademy.com/AutomationPractice/");
 
         // Get all links
-        List<WebElement> links =
-                driver.findElements(By.cssSelector("li[class='gf-li'] a"));
+        List<WebElement> links = driver.findElements(By.cssSelector("li[class='gf-li'] a"));
 
         SoftAssert a = new SoftAssert();
 
